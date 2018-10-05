@@ -63,6 +63,14 @@ Pyrobot robot
 
 Brain determin how to move 
 
+# Stable Modules
+
+World: All worlds can work correctly
+
+Robot: Pyrobot60000 ~ Pyrobot60009
+
+Brain: Avoid, BBOffice, Joystick, SimpleBrain,  
+
 # Example Combination of available plugins
 
 
