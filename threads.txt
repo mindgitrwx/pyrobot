@@ -1,0 +1,42 @@
+brain/__init__.py:37:class Brain(threading.Thread):
+brain/__init__.py:47:        threading.Thread.__init__(self)
+robot/robocup.py:24:class ReadUDP(threading.Thread):
+robot/robocup.py:36:        threading.Thread.__init__(self, name="ReadUDP")
+robot/robocup.py:54:        threading.Thread.join(self, timeout)
+robot/player.py:495:class PlayerUpdater(threading.Thread):
+robot/player.py:506:        threading.Thread.__init__(self, name="PlayerUpdater")
+robot/player.py:522:        threading.Thread.join(self, timeout)
+robot/aibo.py:24:    in the background, give this thread to ListenerThread, below.
+robot/aibo.py:80:class ListenerThread(threading.Thread):
+robot/aibo.py:93:        threading.Thread.__init__(self, name="ListenerThread")
+robot/aibo.py:109:        threading.Thread.join(self, timeout)
+robot/aibo.py:238:        self.sensor_thread    = ListenerThread(self.sensor_socket, self.readWorldState)
+robot/aibo.py:302:        """ Used as a callback in ListenerThread for sockets that produce data fast for us to read. """
+robot/device.py:181:class DeviceThread(threading.Thread):
+robot/device.py:183:        threading.Thread.__init__(self, name = name)
+robot/device.py:193:        threading.Thread.join(self, timeout)
+robot/device.py:219:            self.asyncThread  = DeviceThread(self, name="%s device" % self.type)
+robot/device.py:225:            self.asyncThread  = DeviceThread(self, name="%s device" % self.type)
+robot/device.py:231:            self.asyncThread.join()
+robot/device.py:232:            del self.asyncThread
+plugins/devices/Logic.py:4:class LogicDevice(Device, threading.Thread):
+plugins/devices/Logic.py:6:        threading.Thread.__init__(self)
+plugins/simulators/PyrobotSimulator:64:class Thread(threading.Thread):
+plugins/simulators/PyrobotSimulator:66:        threading.Thread.__init__(self)
+plugins/simulators/PyrobotSimulator:92:        thread = Thread(gui, port)
+camera/player/__init__.py:6:class CameraThread(threading.Thread):
+camera/player/__init__.py:18:        threading.Thread.__init__(self, name="CameraThread")
+camera/player/__init__.py:34:        threading.Thread.join(self, timeout)
+camera/aibo/__init__.py:8:# FIX: why does the speed of the CameraThread effect the main
+camera/aibo/__init__.py:18:class CameraThread(threading.Thread):
+camera/aibo/__init__.py:30:        threading.Thread.__init__(self, name="CameraThread")
+camera/aibo/__init__.py:46:        threading.Thread.join(self, timeout)
+tools/sound.py:38:class SoundThread(threading.Thread):
+tools/sound.py:40:        threading.Thread.__init__(self, name = name)
+tools/sound.py:56:        threading.Thread.join(self, timeout)
+tools/sound.py:78:                self.thread = SoundThread(self)
+tools/cluster/gnuplot-py-1.8/gp_java.py:47:from java.lang import Thread
+tools/cluster/gnuplot-py-1.8/gp_java.py:59:class OutputProcessor(Thread):
+tools/cluster/gnuplot-py-1.8/gp_java.py:68:        Thread.__init__(self, name)
+tools/cluster/gnuplot-py-1.8/PlotItems.py:407:    class _FIFOWriter(threading.Thread):
+tools/cluster/gnuplot-py-1.8/PlotItems.py:438:            threading.Thread.__init__(
